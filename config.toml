@@ -1,0 +1,49 @@
+theme = "catppuccin_mocha"
+
+[editor]
+line-number = "relative"
+cursorline = true
+cursorcolumn = false
+color-modes = true
+true-color = true
+scrolloff = 5
+mouse = true
+
+auto-format = true
+auto-save = false
+
+# Smooth, Nvim-like cursor shapes
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+# Clean file picker behavior
+[editor.file-picker]
+hidden = false
+git-ignore = true
+
+# LSP behavior similar to Nvim with Catppuccin
+[editor.lsp]
+display-messages = true
+auto-signature-help = true
+
+# Minimal whitespace rendering (Catppuccin Nvim defaults)
+[editor.whitespace.render]
+space = "none"
+tab = "none"
+newline = "none"
+
+# Nvim-style clean statusline
+[editor.statusline]
+left   = ["mode"]
+center = ["file-name"]
+right  = ["version-control", "diagnostics", "position"]
+
+# Simple Catppuccin-style separator (no glyph issues)
+separator = " • "
+
+# Mode labels styled like Catppuccin Nvim
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
